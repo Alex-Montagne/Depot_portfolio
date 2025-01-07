@@ -1,0 +1,280 @@
+header {
+    background-color: #474c59e1;
+    font-size: 25px;
+    padding: 0.5rem;
+}
+
+header nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.nav-link{
+    color: rgb(0, 255, 238);
+}
+
+body {
+    text-align: center;
+    size: 100px 20px;
+    font-family: 'Karla';
+    background-image: url('fond.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+main.container { 
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+.title {
+    font-size: 130px;
+    color: rgb(0, 197, 190);
+    text-shadow: rgb(0, 0, 0) 8px 6px;  
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    color :rgb(255, 255, 255)
+}
+
+h2 {
+    text-align: center;
+    color :rgb(255, 255, 255)
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+}
+
+.sous-titre {
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    color :rgb(255, 255, 255)
+}
+
+p {
+    text-shadow: rgb(0, 13, 252) 2px 0 10px;
+    text-align: left;
+    color :rgb(255, 255, 255)
+}
+
+.partie {
+    text-align: center;
+    color :rgb(255, 255, 255)
+}
+
+.carrousel-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;         
+    border-radius: 8px;
+}
+
+.carrousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrousel-slide {
+    display: flex;
+}
+
+.carrousel-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.carrousel-prev, .carrousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.carrousel-prev {
+    left: 5px;
+}
+
+.carrousel-next {
+    right: 5px;
+}
+
+.carrousel-slide img {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 750px; 
+    margin-top: 20px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#contact {  
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.bouton-envoi {
+    width: 100%;
+    padding: 10px;
+    background-color: #50d147;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-response {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.submenu {
+    position: relative;
+    margin-left: 15px;
+}
+
+.submenu > a {
+    color: rgb(0, 255, 238);
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.sub-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #474c59e1;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    width: 150px;
+    font-size: 20px;
+}
+
+.sub-menu li {
+    padding: 8px 20px;
+}
+
+.sub-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu:hover.sub-menu {
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 130px; 
+    }
+
+    .form-container {
+        max-width: 750px; 
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .sous-titre {
+        font-size: 22px; 
+    }
+
+    h2 {
+        font-size: 24px; 
+    }
+
+    .partie {
+        text-align: left;
+        font-size: 18px; 
+    }
+
+    label {
+        font-size: 16px; 
+    }
+
+    input, textarea {
+        font-size: 16px; 
+    }
+
+    .bouton-envoi {
+        font-size: 18px; 
+    }
+    
+    .submenu:hover .sub-menu {
+        display: block;
+    }
+}

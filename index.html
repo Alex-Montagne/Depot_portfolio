@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "index.js" defer></script>
+    <title>PORTFOLIO Alex Montagne</title>
+    <link rel="icon" type="image/x-icon" href="icone.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://d33wubrfki0l68.cloudfront.net/bundles/b1b65f9552d7c6b40f6ae1183ddb18ac1139b5e2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a class="nav-link" href="#about">A propos</a></li>
+            <li><a class="nav-link" href="#projects">Projets</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="submenu"><a href="#">Compétences</a>
+                <ul class="sub-menu">
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#php">PHP</a></li>
+                    <li><a href="#mysql">MySQL</a></li>
+                    <li><a href="#git">Git</a></li>
+                    <li><a href="#linux">Linux</a></li>
+                </ul>
+            </li>
+        </nav>
+    </header>
+
+    <main class = container>
+        <div class="title" title="Portfolio">Portfolio</div>
+        <h1>Alex Montagne</h1>
+        <br/>
+        <h2 class = "sous-titre">Première année de BTS SIO</h2>
+        <br/><br/>
+        
+        <section id="about" class="partie">
+            <h2>A propos</h2>
+            <br/>
+            <p class="lead">
+                <strong>
+                    Etudiant en première année de BTS, j'ai toujours été passionné par l'informatique, plus particulièrement par la programmation.<br/>
+                    Au cours de mes années d'études, j'ai eu l'occasion d'apprendre différents langages de programmation, tels que Python ou bien le C++.<br/>
+                    Ma première année de BTS me permet non seulement de mettre en application mes connaissances, mais également d'en développer de nouvelles,<br/>
+                    comme par exemple le développement Web (avec la maîtrise du JavaScript, du HTML, du CSS, et même du PHP) ou bien la gestion réseau.
+                </strong>
+            </p>
+            <br/>
+        </section>
+
+        <section id="projects" class="partie">
+            <h2>Projets</h2>
+            <br/>
+            <div class="carrousel-container">
+                <div class="carrousel">
+                    <div class="carrousel-slide">
+                        <img src="image1.png" alt="Projet GLPI" title="Projet GLPI" class="carrousel-image">
+                        <img src="image2.png" alt="Projet support dev" title="Projet support dev" class="carrousel-image">
+                        <img src="image3.png" alt="Projet portfolio" title="Projet portfolio" class="carrousel-image">
+                    </div>
+                </div>
+                <button class="carrousel-prev">&#10094;</button>
+                <button class="carrousel-next">&#10095;</button>
+            </div>
+            <br/><br/>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2> 
+            <br/>
+            <div class="form-container">
+                <h3>Contactez-moi</h3>
+                <form id="form">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="bouton-envoi">Envoyer</button>
+                </form>
+                <div id="form-reponse"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
